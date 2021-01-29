@@ -1,0 +1,41 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+.character {
+  flex-basis: 500px;
+  margin: 20px auto;
+  position: relative;
+  border: 1px solid green;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  padding: 10px;
+
+  &-status {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    margin: 0;
+  }
+
+  &-gender {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    margin: 0;
+  }
+
+  &-species {
+    text-align: center;
+    font-size: 18px;
+    color: purple;
+  }
+
+  &-location {
+    text-align: center;
+  }
+}
